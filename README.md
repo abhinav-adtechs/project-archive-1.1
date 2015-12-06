@@ -6,7 +6,7 @@ Project Archive aims at providing a platform for sharing notes and for communica
 
 **CONTRIBUTE**
 
-We are openSource, we'd love to have you on board. If you are skilled at any of the follow, please contact us: App Designs, Front-End App Developer, Back-End App/Web Developer, OutReach and Marketing
+We are openSource, we'd love to have you on board. If you are skilled at any of the follow, please contact us: App Designs, Front-End Android/iOS App , Back-End App/Web , OutReach and Marketing
 
 **CONNECT**
 
