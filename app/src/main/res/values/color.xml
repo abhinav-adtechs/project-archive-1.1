@@ -2,7 +2,10 @@
 <resources>
     <color name="primary">#00BCD4</color>
     <color name="dark_primary">#0097A7</color>
+    <color name="light_green">#8BC34A</color>
     <color name="light_primary">#B2EBF2</color>
+    <color name="amber">#FFC107</color>
     <color name="accent">#CDDC39</color>
+    <color name="orange">#FF9800</color>
     <color name="white">#FFFFFF</color>
 </resources>

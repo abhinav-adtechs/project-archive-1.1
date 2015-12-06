@@ -36,7 +36,7 @@ public class onboardingMain extends FragmentActivity {
 
         setContentView(R.layout.start_onboarding);
 
-        TextView textViewCustom = (TextView) findViewById(R.id.textView2) ;
+        //TextView textViewCustom = (TextView) findViewById(R.id.textView2) ;
         Typeface regular = Typeface.createFromAsset(getAssets(), "fonts/OpenSans-Regular.ttf") ;
         //textViewCustom.setTypeface(regular);
 
