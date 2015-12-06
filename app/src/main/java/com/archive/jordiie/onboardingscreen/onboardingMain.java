@@ -2,6 +2,7 @@ package com.archive.jordiie.onboardingscreen;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -11,6 +12,7 @@ import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 import com.gc.materialdesign.views.ButtonFlat;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
@@ -33,6 +35,11 @@ public class onboardingMain extends FragmentActivity {
 
 
         setContentView(R.layout.start_onboarding);
+
+        TextView textViewCustom = (TextView) findViewById(R.id.textView2) ;
+        Typeface regular = Typeface.createFromAsset(getAssets(), "fonts/OpenSans-Regular.ttf") ;
+        //textViewCustom.setTypeface(regular);
+
 
         pager = (ViewPager) findViewById(R.id.pager);
         indicator = (SmartTabLayout) findViewById(R.id.indicator);
