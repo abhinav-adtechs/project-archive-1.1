@@ -28,4 +28,5 @@ dependencies {
     compile 'com.android.support:support-v4:22.2.1'
     compile 'com.ogaclejapan.smarttablayout:library:1.2.1@aar'
     compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    compile 'com.jpardogo.googleprogressbar:library:1.2.0'
 }

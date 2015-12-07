@@ -17,7 +17,11 @@ public class MainActivity extends AppCompatActivity {
         // Get the shared preferences
         SharedPreferences preferences =  getSharedPreferences("my_preferences", MODE_PRIVATE);
 
-// Check if onboarding_complete is false
+        /*Intent splash = new Intent(this, SplashScreen.class) ;
+        startActivity(splash);
+        */
+
+        // Check if onboarding_complete is false
         if(!preferences.getBoolean("onboarding_complete",false)) {
             // Start the onboarding Activity
             Intent onboarding = new Intent(this,onboardingMain.class);
