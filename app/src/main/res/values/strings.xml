@@ -4,4 +4,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="onboarding5">Notify others and get notified about quizzes, assignments and bunks</string>
+    <string name="signup_tip">VIT Gmail Account Sign Up</string>
+    <string name="signup_button">Sign Up with Google</string>
+    <string name="Signin_tip">Already Registered? Sign In</string>
+    <string name="Signin_button">Sign In with Google</string>
 </resources>
