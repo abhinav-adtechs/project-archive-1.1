@@ -2,7 +2,7 @@
 
 **DESCRIPTION**
 
-Project Archive aims at providing a platform for sharing notes and for communication amongst class students at VIT University. The app mainly address the problem of having a central repository for all notes circulated in the university and the issue of lack of communication because of irregular and complex attendance of students.
+Project Archive aims at providing a platform for sharing notes and for communication amongst classmates at VIT University. The app mainly addresses the problem of having a central repository for all notes circulated in the university and the issue of lack of communication because of irregular and complex attendance of students.
 
 **CONTRIBUTE**
 
