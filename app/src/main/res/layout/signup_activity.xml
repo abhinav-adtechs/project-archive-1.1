@@ -20,7 +20,7 @@
                     android:id="@+id/button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="#1E88E5"
+                    android:background="@color/blue_grey"
                     android:text="@string/signup_button"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
@@ -46,8 +46,8 @@
                     android:layout_alignParentStart="true"
                     android:id="@+id/view" />
 
-                <com.gc.materialdesign.views.ButtonRectangle
-                    android:id="@+id/button2"
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/sign_in_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="#1E88E5"
@@ -65,8 +65,17 @@
                     android:clickable="false"
                     android:text="@string/Signin_tip"
                     android:layout_centerHorizontal="true"
-                    android:layout_below="@+id/button2" />
+                    android:layout_below="@+id/sign_in_button" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="No User Session"
+                    android:id="@+id/statusText"
+                    android:textColor="@color/blue_grey"
+                    android:layout_below="@+id/buttonflat2"
+                    android:layout_centerHorizontal="true" />
 
 
             </RelativeLayout>

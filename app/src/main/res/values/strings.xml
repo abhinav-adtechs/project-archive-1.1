@@ -5,7 +5,11 @@
     <string name="action_settings">Settings</string>
     <string name="onboarding5">Notify others and get notified about quizzes, assignments and bunks</string>
     <string name="signup_tip">VIT Gmail Account</string>
+
+    <string name="signed_in_fmt">Signed in as: %s</string>
+
     <string name="signup_button">Sign Up with Google</string>
     <string name="Signin_tip">Already Registered? Sign In</string>
     <string name="Signin_button">Sign In with Google</string>
+    <string name="server_client_id">1000655328758-eophkpsb8u6t4e4qnp8aqc6g6mo772kb.apps.googleusercontent.com</string>
 </resources>
