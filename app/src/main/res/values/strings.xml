@@ -12,4 +12,5 @@
     <string name="Signin_tip">Already Registered? Sign In</string>
     <string name="Signin_button">Sign In with Google</string>
     <string name="server_client_id">1000655328758-eophkpsb8u6t4e4qnp8aqc6g6mo772kb.apps.googleusercontent.com</string>
+    <string name="top_text_signin">Connect Archive with Google Account</string>
 </resources>
