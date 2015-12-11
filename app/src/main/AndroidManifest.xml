@@ -12,10 +12,10 @@
             android:label="@string/app_name">
 
         </activity>
-        <activity android:name=".onboardingMain"></activity>
+        <activity android:name=".onBoarding.onboardingMain"></activity>
 
         <activity
-            android:name=".SplashScreen"
+            android:name=".Splash.SplashScreen"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
