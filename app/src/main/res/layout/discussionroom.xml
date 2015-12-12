@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <com.gc.materialdesign.views.ButtonFloat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <!-- Overlay that dims the screen -->
+    <com.gordonwong.materialsheetfab.DimOverlayFrameLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Circular reveal container for the sheet -->
+    <io.codetail.widget.RevealLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end|bottom"
+        android:orientation="vertical">
+
+        <!-- Sheet that contains your items -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/fab_sheet"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+
+            >
+
+            <!-- Sheet items -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Recording -->
+                <TextView
+                    android:id="@+id/fab_sheet_item_recording"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/btn_google_dark_focus_ldpi"
+                    android:text="@string/recording" />
+
+                <!-- Reminder -->
+                <TextView
+                    android:id="@+id/fab_sheet_item_reminder"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/btn_google_dark_focus_ldpi"
+                    android:text="@string/reminder" />
+
+                <!-- Photo -->
+                <TextView
+                    android:id="@+id/fab_sheet_item_photo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/btn_google_dark_focus_ldpi"
+                    android:text="@string/photo" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </io.codetail.widget.RevealLinearLayout>
+
+
+</RelativeLayout>
