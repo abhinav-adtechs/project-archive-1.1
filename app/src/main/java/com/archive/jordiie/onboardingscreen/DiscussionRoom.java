@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.gc.materialdesign.views.ButtonFloat;
+//import com.gc.materialdesign.views.ButtonFloat;
 import com.gordonwong.materialsheetfab.AnimatedFab;
 import com.gordonwong.materialsheetfab.MaterialSheetFab;
 

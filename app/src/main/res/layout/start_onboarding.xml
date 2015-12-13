@@ -17,7 +17,7 @@
         android:layout_alignParentBottom="true"
         android:id="@+id/navigation">
 
-        <com.gc.materialdesign.views.ButtonFlat
+        <info.hoang8f.widget.FButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
@@ -25,16 +25,16 @@
             android:elevation="7dp"
 
             android:id="@+id/skip"
-            android:background="@color/white" />
+            />
 
-        <com.gc.materialdesign.views.ButtonFlat
+        <info.hoang8f.widget.FButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:text="Next"
             android:id="@+id/next"
             android:elevation="7dp"
-            android:background="@color/white" />
+            />
 
     </LinearLayout>
 

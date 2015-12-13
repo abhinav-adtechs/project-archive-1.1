@@ -8,8 +8,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.gc.materialdesign.views.Button;
-import com.gc.materialdesign.views.ProgressBarIndeterminate;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -17,6 +15,8 @@ import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
+
+import info.hoang8f.widget.FButton;
 
 /**
  * Created by jordiie on 23/9/15.
@@ -26,8 +26,7 @@ public class Signup extends AppCompatActivity implements
         View.OnClickListener{
 
 //    private ProgressBarIndeterminate progressbar1 ;
-    private Button Register ;
-    private Button Login ;
+
     private GoogleApiClient mGoogleApiClient ;
     private static final int RC_SIGN_IN = 0;
     private TextView mStatusTextView ;
@@ -37,6 +36,17 @@ public class Signup extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.signup_activity);
+
+
+        FButton Register = (FButton) findViewById(R.id.button) ;
+
+
+        Register.setButtonColor(getResources().getColor(R.color.blue_grey));
+        Register.setShadowEnabled(true);
+        Register.setCornerRadius(3);
+        Register.setFButtonPadding(4,0,4,0);
+
+
 
 
         SignInButton signInButton = (SignInButton) findViewById(R.id.sign_in_button);

@@ -13,8 +13,9 @@ import android.view.View;
 import com.archive.jordiie.onboardingscreen.MainActivity;
 import com.archive.jordiie.onboardingscreen.R;
 import com.archive.jordiie.onboardingscreen.Animations.ZoomOut;
-import com.gc.materialdesign.views.ButtonFlat;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
+
+import info.hoang8f.widget.FButton;
 
 /**
  * Created by jordiie on 22/9/15.
@@ -24,8 +25,9 @@ public class onboardingMain extends FragmentActivity {
 
     private ViewPager pager;
     private SmartTabLayout indicator;
-    private ButtonFlat skip;
-    private ButtonFlat next;
+    private FButton skip;
+    private FButton next;
+
 
 
     @Override
@@ -42,8 +44,17 @@ public class onboardingMain extends FragmentActivity {
 
         pager = (ViewPager) findViewById(R.id.pager);
         indicator = (SmartTabLayout) findViewById(R.id.indicator);
-        skip = (ButtonFlat) findViewById(R.id.skip);
-        next = (ButtonFlat) findViewById(R.id.next);
+        skip = (FButton) findViewById(R.id.skip);
+        next = (FButton) findViewById(R.id.next);
+
+        //setting attributes
+        skip.setCornerRadius(0);
+        skip.setButtonColor(getResources().getColor(R.color.fbutton_color_transparent));
+        skip.setShadowEnabled(false);
+        next.setCornerRadius(0);
+        next.setButtonColor(getResources().getColor(R.color.fbutton_color_transparent));
+        next.setShadowEnabled(false);
+
 
         pager.setAdapter(adapter);
         indicator.setViewPager(pager);
