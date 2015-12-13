@@ -2,6 +2,7 @@ package com.archive.jordiie.onboardingscreen;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -129,6 +130,24 @@ public class Signup extends AppCompatActivity implements
             GoogleSignInAccount acct = result.getSignInAccount();
             mStatusTextView = (TextView) findViewById(R.id.statusText) ;
             mStatusTextView.setText(getString(R.string.signed_in_fmt, acct.getDisplayName()));
+
+        /*
+            int SPLASH_TIME_OUT = 4000;
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent j = new Intent(Signup.this, WelcomeScreen.class) ;
+                    String Name = mStatusTextView.getText().toString() ;
+                    j.putExtra("Username", Name) ;
+
+                    startActivity(j);
+                    finish();
+                }
+            }, SPLASH_TIME_OUT);
+
+        */
+
+
             //updateUI(true);
         } else {
             // Signed out, show unauthenticated UI.
