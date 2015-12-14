@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="10dp"
+        android:id="@+id/headercolor"
+        android:src="@drawable/redline"
+        android:elevation="7dp"
+        android:longClickable="false"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Notes"
+        android:id="@+id/header"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        android:textSize="17dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp" />
+
+</LinearLayout>

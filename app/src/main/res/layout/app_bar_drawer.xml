@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".NavDrawer.Drawer">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/discussionroom" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"/>
+
+    <!-- Overlay that dims the screen -->
+    <com.gordonwong.materialsheetfab.DimOverlayFrameLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Circular reveal container for the sheet -->
+    <io.codetail.widget.RevealLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end|bottom"
+        android:orientation="vertical">
+
+        <!-- Sheet that contains your items -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/fab_sheet"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+
+            >
+
+            <!-- Sheet items -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Recording -->
+                <TextView
+                    android:id="@+id/fab_sheet_item_recording"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/btn_google_dark_focus_ldpi"
+                    android:text="@string/recording" />
+
+                <!-- ReminderList -->
+                <TextView
+                    android:id="@+id/fab_sheet_item_reminder"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/btn_google_dark_focus_ldpi"
+                    android:text="@string/reminder" />
+
+                <!-- Photo -->
+                <TextView
+                    android:id="@+id/fab_sheet_item_photo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/btn_google_dark_focus_ldpi"
+                    android:text="@string/photo" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </io.codetail.widget.RevealLinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
