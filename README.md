@@ -10,11 +10,11 @@ We are openSource, we'd love to have you on board. If you are skilled at any of 
 
 **TO-DO**
 
-1. OAuth 2.0 Google SignIn for VIT Gmail + (Parent Mob no and DOB)
+1. Attach API to obtain data from Parent/Student Login
 
-2. XMPP Service using GCM/QuickBlox
+2. XMPP/HTTP using GCM/QuickBlox
 
-3. Data Server
+3. Setup Server
 
 
 **CONNECT**
