@@ -40,11 +40,20 @@ public class APIconnection {
         //appController=AppController.getInstance();
     }
 
-    /*public String makeServiceCall(String url, int method, List<NameValuePair> params){
+    public String makeServiceCall(String url, int method, List<NameValuePair> params){
         try{
             DefaultHttpClient httpClient = new DefaultHttpClient();
             HttpEntity httpEntity = null;
             HttpResponse httpResponse = null;
+
+            HttpPost httpPost = new HttpPost(url);
+            // adding post params
+            if (params != null) {
+                httpPost.setEntity(new UrlEncodedFormEntity(params));
+            }
+
+            httpResponse = httpClient.execute(httpPost);
+
         }
         catch (){
 
@@ -52,7 +61,7 @@ public class APIconnection {
         catch(){
 
         }
-    }*/
+    }
 
     public void serverTest(){
         if(mListener!=null) {
