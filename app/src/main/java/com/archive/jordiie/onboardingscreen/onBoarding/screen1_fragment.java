@@ -21,6 +21,8 @@ public class screen1_fragment extends android.support.v4.app.Fragment {
                              ViewGroup container, Bundle s) {
 
 
+
+
         return inflater.inflate(
                 R.layout.screen1,
                 container,

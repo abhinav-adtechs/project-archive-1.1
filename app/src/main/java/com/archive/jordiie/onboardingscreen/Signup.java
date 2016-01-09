@@ -131,21 +131,20 @@ public class Signup extends AppCompatActivity implements
             mStatusTextView = (TextView) findViewById(R.id.statusText) ;
             mStatusTextView.setText(getString(R.string.signed_in_fmt, acct.getDisplayName()));
 
-        /*
-            int SPLASH_TIME_OUT = 4000;
-            new Handler().postDelayed(new Runnable() {
+            int DELAY = 4000;
+
+            Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent j = new Intent(Signup.this, WelcomeScreen.class) ;
-                    String Name = mStatusTextView.getText().toString() ;
-                    j.putExtra("Username", Name) ;
-
-                    startActivity(j);
-                    finish();
+                    Intent intent = new Intent(Signup.this, WelcomeScreen.class);
+                    startActivity(intent);
                 }
-            }, SPLASH_TIME_OUT);
+            }, DELAY);
 
-        */
+
+
+
 
 
             //updateUI(true);

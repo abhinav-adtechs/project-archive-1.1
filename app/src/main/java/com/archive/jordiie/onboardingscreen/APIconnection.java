@@ -18,9 +18,15 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
+
 /**
  * Created by jordiie on 14/12/15.
  */
+
+
+
+
 public class APIconnection {
 
     //Initialize HTTP URLs
